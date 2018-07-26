@@ -1,12 +1,12 @@
 const Koa = require('koa');
 const Router = require('koa-router');
 const app = new Koa();
-// const router = new Router();
+const router = new Router();
 
 //路径加前缀
-const router = new Router({
-    prefix: '/koa'
-})
+// const router = new Router({
+//     prefix: '/koa'
+// })
 
 router.get('/', function(ctx, next) {
     ctx.body = 'hello page';
